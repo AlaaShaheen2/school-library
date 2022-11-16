@@ -1,12 +1,12 @@
 require './nameable'
 require './capitalize_decorator'
-require './timmwe_decorator'
+require './trimmer_decorator'
 
 class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id
 
-  def initialize(age, name: 'Unknown', parent_permission: true)
+  def initialize(age, name, parent_permission: true)
     super()
     @id = Random.rand(1..900)
     @name = name
