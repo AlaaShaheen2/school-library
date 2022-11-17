@@ -1,5 +1,5 @@
 # OOP school library
-> In this project, you will start building your school library app. In this initial step, you will implement the classes to represent students and teachers.
+> In this project, I am building a school library app using Ruby OOP concepts.
 
 
 ## Built With
@@ -18,10 +18,9 @@ git clone https://github.com/AlaaShaheen2/school-library.git
 ```
 
 #### 3 - run the project
-Inside the morse.rb file there is a method decode_message:
-> Pass your morse code as a parameter in this method like so: decode_message('.- -... --- -..- ..-. ..- .-.. .-.. --- ..-. .-. ..- -... .. . ...')
+In the terminal run ruby person.rb and check the results.
 
-## Authors
+## Author:
 ### 👩‍💻 Alaa Shaheen
 
 - GitHub: [@AlaaShaheen2](https://github.com/AlaaShaheen2)
@@ -31,7 +30,7 @@ Inside the morse.rb file there is a method decode_message:
 
 ## Acknowledgments
 
-> Thanks to all the developers whose code, documentations, and efforts helped us doing this project.
+> Thanks to all the developers whose code, documentations, and efforts helped me doing this project.
 
 ## 🤝 Contributing
 
