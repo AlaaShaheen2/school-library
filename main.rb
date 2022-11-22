@@ -5,7 +5,7 @@ def main
   menu = Menu.new
   library = App.new
   puts "\nWelcome to School Library by Alaa!\n\n"
-  menu.list_menu(library)
+  menu.display_menu(library)
 end
 
 main
