@@ -21,20 +21,20 @@ def preserve_people(library)
 end
 
 def preserve_books(library)
-    books = []
-    library.books.each do |book|
-      book = { title: book.title, author: book.author }
-      books.push(book)
-    end
-    File.write('books.json', "#{JSON.generate(books)}\n")
+  books = []
+  library.books.each do |book|
+    book = { title: book.title, author: book.author }
+    books.push(book)
   end
-  
-  def preserve_rentals(library)
-    rentals = []
-    library.rentals.each do |rental|
-      rental = { date: rental.date, book: library.books.index(rental.book), book_title: rental.book.title,
-                 person: library.people.index(rental.person), person_name: rental.person.name }
-      rentals.push(rental)
-    end
-    File.write('rentals.json', "#{JSON.generate(rentals)}\n")
+  File.write('books.json', "#{JSON.generate(books)}\n")
+end
+
+def preserve_rentals(library)
+  rentals = []
+  library.rentals.each do |rental|
+    rental = { date: rental.date, book: library.books.index(rental.book), book_title: rental.book.title,
+               person: library.people.index(rental.person), person_name: rental.person.name }
+    rentals.push(rental)
   end
+  File.write('rentals.json', "#{JSON.generate(rentals)}\n")
+end

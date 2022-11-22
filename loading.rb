@@ -21,19 +21,19 @@ def loading_people(library)
 end
 
 def loading_books(library)
-    File.write('books.json', JSON.generate([])) unless File.exist?('books.json')
-    books = JSON.parse(File.read('books.json'))
-    books.each do |book|
-      book = Book.new(book['title'], book['author'])
-      library.books.push(book)
-    end
+  File.write('books.json', JSON.generate([])) unless File.exist?('books.json')
+  books = JSON.parse(File.read('books.json'))
+  books.each do |book|
+    book = Book.new(book['title'], book['author'])
+    library.books.push(book)
   end
-  
-  def loading_rentals(library)
-    File.write('rentals.json', JSON.generate([])) unless File.exist?('rentals.json')
-    rentals = JSON.parse(File.read('rentals.json'))
-    rentals.each do |rental|
-      rental = Rental.new(rental['date'], library.people[rental['person']], library.books[rental['book']])
-      library.rentals.push(rental)
-    end
+end
+
+def loading_rentals(library)
+  File.write('rentals.json', JSON.generate([])) unless File.exist?('rentals.json')
+  rentals = JSON.parse(File.read('rentals.json'))
+  rentals.each do |rental|
+    rental = Rental.new(rental['date'], library.people[rental['person']], library.books[rental['book']])
+    library.rentals.push(rental)
   end
+end
