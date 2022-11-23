@@ -10,6 +10,7 @@ end
 # Test for title
 describe '#title' do
   it "should return the right title" do
-    book = Book.new("My Title", )
+    book = Book.new("My Title", "My Author")
+    expect(book.title).to equal("My Title")
   end
 end
