@@ -11,6 +11,14 @@ end
 describe '#title' do
   it "should return the right title" do
     book = Book.new("My Title", "My Author")
-    expect(book.title).to equal("My Title")
+    expect(book.title).to eq("My Title")
+  end
+end
+
+# Test for author
+describe '#author' do
+  it "should return the right author" do
+    book = Book.new("My Title", "My Author")
+    expect(book.author).to eq("My Author")
   end
 end
