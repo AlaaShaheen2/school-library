@@ -1,3 +1,5 @@
+require_relative '../book'
+
 # Test for initialize method
 describe Book do
   it 'should create instance of the book class with 2 parameters' do
