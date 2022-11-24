@@ -1,4 +1,4 @@
-require_relative '../book'
+require 'spec_helper'
 
 # Test for initialize method
 describe Book do
